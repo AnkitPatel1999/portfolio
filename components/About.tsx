@@ -26,8 +26,8 @@ const About = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <Image 
-              src="/about/surya.webp"
+            <Image
+              src="/about/ankit1.png"
               alt="Ankit Patel" 
               className="rounded-2xl shadow-sm w-full"
               width={800}
@@ -44,9 +44,9 @@ const About = () => {
             <p className="text-lg text-muted-foreground">
               I am a Full-stack web developer with over 2.5 years of experience building fast, reliable, and user-friendly web applications. Proven expertise in full project cycles—from backend logic and APIs to frontend interfaces and SEO. Passionate about clean code, scalable systems, and continual learning through real-world implementation.
             </p>
-            <p className="text-lg text-muted-foreground">
+            {/* <p className="text-lg text-muted-foreground">
               Contact: <a href="mailto:ankitpatelas90@gmail.com" className="underline">ankitpatelas90@gmail.com</a> | <a href="tel:+91 8849476499" className="underline">8849476499</a> | Dahod, Gujarat
-            </p>
+            </p> */}
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

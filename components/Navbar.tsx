@@ -60,7 +60,7 @@ const Navbar = () => {
           variants={navAnimation}
           className="text-xl font-bold"
         >
-          SP
+          Ankit Patel
         </motion.div>
         
         {/* Desktop Navigation */}

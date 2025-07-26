@@ -69,7 +69,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
         ease: [0.21, 0.47, 0.32, 0.98]
       }}
       viewport={{ once: true, margin: "-100px" }}
-      className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
+      className="p-10 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
     >
       <div className="relative group overflow-hidden">
         <Image 

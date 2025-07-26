@@ -24,6 +24,13 @@ const Hero = () => {
               className="bg-black text-white hover:bg-black/90 h-11 px-4 md:px-8 rounded-md inline-flex items-center justify-center font-medium text-sm md:text-base"
             >
 
+              View Projects
+            </a>
+            <a 
+              href="#contact" 
+              className="border-2 h-11 px-4 md:px-8 rounded-md inline-flex items-center justify-center font-medium text-sm md:text-base"
+            >
+
               Contact Me
             </a>
           </FadeIn>
@@ -32,7 +39,6 @@ const Hero = () => {
       <ScrollIndicator />
     </section>
   );
-// ...existing code...
 };
 
 export default Hero;
