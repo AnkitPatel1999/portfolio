@@ -46,53 +46,21 @@ const skillCategories: SkillCategory[] = [
 const SkillCard = ({ category, index }: { category: SkillCategory; index: number }) => {
   const containerVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        delay: index * 0.2,
-        staggerChildren: 0.1,
-        delayChildren: index * 0.2 + 0.3
-      }
-    }
+    visible: { opacity: 1, y: 0 }
   };
-
-  const itemVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut"
-      }
-    }
-  };
-
   return (
     <motion.div
       variants={containerVariants}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-100px" }}
-      className="bg-white rounded-xl p-6 shadow-sm"
+      animate="visible"
+      className="bg-white rounded-xl shadow p-6"
     >
-      <h3 className="text-xl font-semibold mb-6">{category.title}</h3>
-      <div className="space-y-4">
+      <h3 className="text-xl font-semibold mb-4">{category.title}</h3>
+      <ul className="list-disc ml-6 space-y-2 text-lg text-muted-foreground">
         {category.skills.map((skill) => (
-          <motion.div
-            key={skill.name}
-            variants={itemVariants}
-            className="flex items-center gap-3"
-          >
-            <div className="flex-shrink-0 w-5 h-5 bg-gray-100 rounded-full text-black flex items-center justify-center">
-              <Check size={12} />
-            </div>
-            <span className="text-gray-700">{skill.name}</span>
-          </motion.div>
+          <li key={skill.name}>{skill.name}</li>
         ))}
-      </div>
+      </ul>
     </motion.div>
   );
 };
@@ -105,7 +73,6 @@ const Skills = () => {
           text="Technical Skills"
           className="text-3xl md:text-4xl font-bold mb-16 text-center"
         />
-        
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {skillCategories.map((category, index) => (
             <SkillCard 

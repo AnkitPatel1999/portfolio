@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 import { Github, Linkedin } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/suryapavan1912", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/surya-pavan-79723b1b3", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/AnkitPatel1999", label: "GitHub" },
+  { icon: Linkedin, href: "https://linkedin.com/in/ankitpatel1999", label: "LinkedIn" },
 ];
 
 const Footer = () => {
@@ -21,9 +21,8 @@ const Footer = () => {
             viewport={{ once: true }}
             className="text-gray-400"
           >
-            © 2025 Surya. All rights reserved.
+            © 2025 Ankit Patel. All rights reserved.
           </motion.p>
-          
           <div className="flex gap-6">
             {socialLinks.map(({ icon: Icon, href, label }) => (
               <motion.a
@@ -32,6 +31,8 @@ const Footer = () => {
                 whileHover={{ y: -3 }}
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label={label}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Icon size={20} />
               </motion.a>

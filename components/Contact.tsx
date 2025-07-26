@@ -17,20 +17,20 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "pavan222mail@gmail.com",
-    href: "mailto:pavan222mail@gmail.com"
+    value: "ankitpatelas90@gmail.com",
+    href: "mailto:ankitpatelas90@gmail.com"
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+91 9361368366",
-    href: "tel:+919361368366"
+    value: "+91 8849476499",
+    href: "tel:+918849476499"
   }
 ];
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/suryapavan1912", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/surya-pavan-79723b1b3", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/AnkitPatel1999", label: "GitHub" },
+  { icon: Linkedin, href: "https://linkedin.com/in/ankitpatel1999", label: "LinkedIn" },
 ];
 
 const Contact = () => {

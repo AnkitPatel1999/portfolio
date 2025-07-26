@@ -13,23 +13,32 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    title: "Full Stack Developer",
-    company: "AllEvents",
-    period: "May 2023 - Jul 2025",
+    title: "Software Engineer",
+    company: "Allevents Information Private Limited",
+    period: "Jan 2023 – Present (2Y 6M)",
     responsibilities: [
-      "Gained versatile experience by working on numerous projects like dashboards, email services and internal automations.",
-      "Revamped landing, category, and event pages—lighter code, faster loads, better user experience, and higher engagement.",
-      "Shipped and maintained REST and mobile APIs while rolling out new features and fixing bugs on a weekly cycle.",
-      "Managed a team of 2 developers, handling planning, code reviews, and delivery without missing a deadline.",
+      "Integrated Stripe payment gateway for recurring subscription management, enabling seamless payment processing for users.",
+      "Built comprehensive email campaign module with credit-based system, customizable templates, and AWS queue integration for efficient delivery to large user bases.",
+      "Developed dynamic form builder with 7 field types and real-time validation, providing intuitive user experience for event registration.",
+      "Created multiple web applications including QR code generator, trackable link generator, and coupon management system."
     ]
   },
   {
-    title: "Full Stack Intern",
-    company: "Academix",
-    period: "Dec 2022 - Mar 2023",
+    title: "Software Engineer Intern",
+    company: "Allevents Information Private Limited",
+    period: "Jun 2022 – Dec 2022 (6M)",
     responsibilities: [
-      "Developed high-quality, user-friendly features for Academix course marketplace using React JS, improving existing functionality and enhancing overall platform performance.",
-      "Collaborated within the core team to translate project requirements into new features, conducting thorough testing to ensure best-practice code quality \& stability.",
+      "Implemented an advanced event search feature with scoring algorithm, improving search relevance and user engagement.",
+      "Created responsive email templates using MJML framework, ensuring optimal display across various email clients.",
+      "Executed comprehensive technical SEO optimization for entire website, utilizing Google Search Console, Google Analytics, and PageSpeed Insights."
+    ]
+  },
+  {
+    title: "Frontend Web Developer Intern",
+    company: "OyeBusy Technologies Pvt. Ltd.",
+    period: "Oct 2020 – Feb 2021 (4M)",
+    responsibilities: [
+      "Implemented technical SEO for whole website and learned Google Search Console, Google Analytics & PageSpeed Insights to improve web performance."
     ]
   }
 ];
@@ -121,7 +130,7 @@ const Experience = () => {
           <div className="max-w-4xl mx-auto space-y-8">
             {experiences.map((experience, index) => (
               <ExperienceCard 
-                key={experience.company} 
+                key={experience.company + '-' + experience.title} 
                 experience={experience} 
                 index={index} 
               />

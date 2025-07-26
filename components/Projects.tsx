@@ -20,43 +20,41 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "AllEvents Event Pages",
-    description: "Redesigned and developed event pages from scratch with a completely new user interface. Optimized the codebase to significantly improve page speed and performance through modern development practices.",
+    title: "Event Management Platform Enhancement",
+    description: "Spearheaded the development of core features for a comprehensive event management platform, including advanced search algorithms, payment processing, and email campaign systems. Utilized PHP, Slim PHP for APIs, Vue.js, React.js, and MySQL to create scalable solutions serving thousands of users daily.",
     image: "/projects/allevents.webp",
     technologies: [
       { name: "PHP" },
-      { name: "jQuery" },
-      { name: "Performance Optimization" },
-      { name: "Legacy Code Migration" }
+      { name: "Slim PHP" },
+      { name: "Vue.js" },
+      { name: "React.js" },
+      { name: "MySQL" }
     ],
     type: "corporate",
-    demoUrl: "https://allevents.in/",
-
+    demoUrl: "https://allevents.in/"
   },
   {
-    title: "Vardhan Enterprises",
-    description: "Developed a fully static website for a food industry consultancy firm. This project focused on creating a professional web presence while implementing comprehensive SEO optimization to ensure optimal search engine visibility.",
+    title: "Dynamic Form Builder & Email Campaign System",
+    description: "Built a sophisticated form builder supporting multiple field types with real-time validation and preview functionality. Integrated with AWS SQS for high-volume email delivery, enabling efficient communication with event attendees and organizers through personalized campaigns.",
+    image: "/projects/lousy.webp",
+    technologies: [
+      { name: "React.js" },
+      { name: "AWS SQS" },
+      { name: "Email Campaigns" }
+    ],
+    type: "corporate"
+  },
+  {
+    title: "Website Performance Optimization & Redesign",
+    description: "Led comprehensive website redesign focusing on user experience improvements across event cards, homepage, category pages, and dashboards. Implemented technical SEO best practices and performance optimizations, resulting in significant improvement in user engagement metrics.",
     image: "/projects/vardhan.webp",
     technologies: [
       { name: "Next.js" },
       { name: "SEO" },
-      { name: "Responsive Design" }
+      { name: "Performance Optimization" }
     ],
     demoUrl: "https://vardhanenterprises.co/",
     type: "freelance"
-  },
-  {
-    title: "E-commerce Platform",
-    description: "Built a comprehensive e-commerce platform with MERN stack featuring user authentication, wishlist and cart functionality. Created an intuitive and seamless shopping experience with robust backend integration.",
-    image: "/projects/lousy.webp",
-    technologies: [
-      { name: "React" },
-      { name: "Node.js" },
-      { name: "Express" },
-      { name: "MongoDB" }
-    ],
-    demoUrl: "https://lousy-d1b70.web.app/",
-    type: "personal"
   },
 ];
 
@@ -79,33 +77,10 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
           alt={project.title}
           width={300}
           height={200}
-          className="w-full aspect-[2/1] object-cover transition-transform duration-500 group-hover:scale-105"
+          className="w-full object-cover mb-4 rounded"
         />
-        <div className="absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
-        {/* <span className={`absolute top-4 right-4 px-3 py-1 rounded-full text-sm ${
-          project.type === 'freelance' ? 'bg-blue-100 text-blue-700' :
-          project.type === 'corporate' ? 'bg-purple-100 text-purple-700' :
-          'bg-green-100 text-green-700'
-        }`}>
-          {project.type.charAt(0).toUpperCase() + project.type.slice(1)}
-        </span> */}
-      </div>
-      
-      <div className="p-6">
-        <div className="flex justify-between items-center mb-2">
-          <h3 className="text-xl font-semibold">{project.title}</h3>
-          <span className={`px-3 py-1 rounded-full text-sm ${
-            project.type === 'freelance' ? 'bg-blue-100 text-blue-700' :
-            project.type === 'corporate' ? 'bg-purple-100 text-purple-700' :
-            'bg-green-100 text-green-700'
-          }`}>
-            {project.type.charAt(0).toUpperCase() + project.type.slice(1)}
-          </span>
-        </div>
-
-        {/* <h3 className="text-xl font-semibold">{project.title}</h3> */}
+        <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
         <p className="text-muted-foreground mb-4">{project.description}</p>
-        
         <div className="flex flex-wrap gap-2 mb-8">
           {project.technologies.map((tech) => (
             <span
@@ -116,13 +91,13 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
             </span>
           ))}
         </div>
-        
-        <div className="flex justify-start  gap-5">
+        <div className="flex justify-start gap-5">
           {project.demoUrl && (
             <a
               href={project.demoUrl}
               className="flex items-center gap-2 text-foreground transition-colors hover:text-gray-600"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <ExternalLink size={20} />
               Visit Website

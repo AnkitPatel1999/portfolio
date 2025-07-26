@@ -15,7 +15,7 @@ const Navbar = () => {
     { title: "Contact", href: "#contact" },
   ];
   
-  const resumePath = "https://drive.usercontent.google.com/u/0/uc?id=1lT-fgveRgqPsvH0RuH7plw8mgT19_K4i&export=download";
+  const resumePath = "https://drive.google.com/file/d/1lT-fgveRgqPsvH0RuH7plw8mgT19_K4i/view?usp=sharing";
 
   const navAnimation = {
     hidden: { y: -20, opacity: 0 },
