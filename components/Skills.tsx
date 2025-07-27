@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from "framer-motion";
-import { Check } from "lucide-react";
 import { AnimatedText } from "@/components/animations/AnimatedText";
 
 interface Skill {
@@ -50,7 +49,7 @@ const skillCategories: SkillCategory[] = [
   }
 ];
 
-const SkillCard = ({ category, index }: { category: SkillCategory; index: number }) => {
+const SkillCard = ({ category }: { category: SkillCategory; index: number }) => {
   const containerVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 }
