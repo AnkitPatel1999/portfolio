@@ -27,7 +27,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <Image
-              src="/projects/ankit1.png"
+              src="/about/ankit1.png"
               alt="Ankit Patel" 
               className="rounded-2xl shadow-sm w-full"
               width={300}
