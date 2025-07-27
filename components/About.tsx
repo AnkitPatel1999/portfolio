@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Github, Linkedin } from "lucide-react";
 import { AnimatedText } from "@/components/animations/AnimatedText";
 import Image from "next/image";
+import { a } from "framer-motion/client";
 
 const About = () => {
   const socialLinks = [
@@ -30,8 +31,8 @@ const About = () => {
               src="/projects/ankit1.png"
               alt="Ankit Patel" 
               className="rounded-2xl shadow-sm w-full"
-              width={800}
-              height={600}
+              width={300}
+              height={300}
             />
           </motion.div>
           <motion.div
