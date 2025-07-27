@@ -22,38 +22,37 @@ const projects: Project[] = [
   {
     title: "Event Management Platform Enhancement",
     description: "Spearheaded the development of core features for a comprehensive event management platform, including advanced search algorithms, payment processing, and email campaign systems. Utilized PHP, Slim PHP for APIs, Vue.js, React.js, and MySQL to create scalable solutions serving thousands of users daily.",
-    image: "/projects/allevents.webp",
+    image: "/projects/search.png",
     technologies: [
       { name: "PHP" },
       { name: "Slim PHP" },
       { name: "Vue.js" },
-      { name: "React.js" },
       { name: "MySQL" }
     ],
     type: "corporate",
-    demoUrl: "https://allevents.in/"
+    demoUrl: "https://allevents.in/ahmedabad#search"
   },
   {
     title: "Dynamic Form Builder & Email Campaign System",
     description: "Built a sophisticated form builder supporting multiple field types with real-time validation and preview functionality. Integrated with AWS SQS for high-volume email delivery, enabling efficient communication with event attendees and organizers through personalized campaigns.",
-    image: "/projects/lousy.webp",
+    image: "/projects/email_campaign.png",
     technologies: [
       { name: "React.js" },
       { name: "AWS SQS" },
-      { name: "Email Campaigns" }
+      { name: "AngularJS" },
     ],
     type: "corporate"
   },
   {
     title: "Website Performance Optimization & Redesign",
     description: "Led comprehensive website redesign focusing on user experience improvements across event cards, homepage, category pages, and dashboards. Implemented technical SEO best practices and performance optimizations, resulting in significant improvement in user engagement metrics.",
-    image: "/projects/vardhan.webp",
+    image: "/projects/city_home.png",
     technologies: [
-      { name: "Next.js" },
+      { name: "Vue.js" },
       { name: "SEO" },
       { name: "Performance Optimization" }
     ],
-    demoUrl: "https://vardhanenterprises.co/",
+    demoUrl: "https://allevents.in/ahmedabad",
     type: "freelance"
   },
 ];
@@ -69,7 +68,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
         ease: [0.21, 0.47, 0.32, 0.98]
       }}
       viewport={{ once: true, margin: "-100px" }}
-      className="p-10 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
+      className="project-card bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
     >
       <div className="relative group overflow-hidden">
         <Image 

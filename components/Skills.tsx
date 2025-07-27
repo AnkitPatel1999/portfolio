@@ -19,8 +19,11 @@ const skillCategories: SkillCategory[] = [
     skills: [
       { name: "Next.js & React.js" },
       { name: "Vue.js" },
+      { name: "AngularJS" },
       { name: "TypeScript" },
-      { name: "jQuery" }
+      { name: "JavaScript" },
+      { name: "jQuery" },
+      { name: "AJAX" }
     ]
   },
   {
@@ -35,10 +38,14 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Additional Skills",
     skills: [
-      { name: "Problem solving" },
+      { name: "Basic AWS" },
       { name: "Web scraping" },
       { name: "Git, Redis, SQS" },
       { name: "Memcached" },
+      { name: "SEO & Performance Optimization"},
+      { name: "Google Analytics" },
+      { name: "Google Search Console" },
+      
     ]
   }
 ];
