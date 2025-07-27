@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { Github, Linkedin } from "lucide-react";
 import { AnimatedText } from "@/components/animations/AnimatedText";
 import Image from "next/image";
-import { a } from "framer-motion/client";
 
 const About = () => {
   const socialLinks = [
