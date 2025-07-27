@@ -1,42 +1,3 @@
-// import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
-// import "./globals.css";
-// import ClientLayout from '@/components/ClientLayout'
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
-// export const metadata: Metadata = {
-//   title: "Portfolio",
-//   description: "Personal portfolio website",
-// };
-
-// export default function RootLayout({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode;
-// }>) {
-//   return (
-//     <html lang="en">
-//       <body
-//         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-//       >
-//         <ClientLayout>
-//           {children}
-//         </ClientLayout>
-//       </body>
-//     </html>
-//   );
-// }
-
-// app/layout.tsx
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -48,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Ankit Patel | Software Engineer',
-  description: '',
+  description: 'I am a Full-stack web developer with over 2.5 years of experience building fast, reliable, and user-friendly web applications. Proven expertise in full project cycles—from backend logic and APIs to frontend interfaces and SEO. Passionate about clean code, scalable systems, and continual learning through real-world implementation.',
 }
 
 export default function RootLayout({
