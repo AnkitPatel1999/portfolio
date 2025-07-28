@@ -44,10 +44,10 @@ const Contact = () => {
       
       try {
         const result = await emailjs.sendForm(
-          'service_61alm5x', // Replace with your EmailJS service ID
-          'template_puwbehh', // Replace with your EmailJS template ID
+          'service_24u4kok', // Replace with your EmailJS service ID
+          'template_m4mi4ua', // Replace with your EmailJS template ID
           form,
-          'hXEfSdR8zCKmJpI1L' // Replace with your EmailJS public key
+          '2lZHJRNEiAoale4Zw' // Replace with your EmailJS public key
         );
   
         if (result.text === 'OK') {
